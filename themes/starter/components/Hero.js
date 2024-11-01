@@ -1,23 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import { siteConfig } from '@/lib/config'
-
 /**
  * 英雄大图区块
  */
 export const Hero = () => {
-  const image = siteConfig('STARTER_HERO_IMAGES')?.[0] || '';
-  const backgroundImage = 'https://rm-static.djicdn.com/tem/55708/852d84178ee8e1669738327774657635.JPG';
   return (
     <>
       {/* <!-- ====== Hero Section Start --> */}
       <div
         id='home'
-        className='relative overflow-hidden pt-[120px] md:pt-[130px] lg:pt-[160px]'>
-        <img
-          src={backgroundImage}
-          alt='hero'
-          className='absolute inset-0 z-[-1] w-full h-full object-cover'
-        />
+        className='relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]'>
         <div className='container'>
           <div className='-mx-4 flex flex-wrap items-center'>
             <div className='w-full px-4'>
@@ -25,8 +17,7 @@ export const Hero = () => {
                 className='hero-content wow fadeInUp mx-auto max-w-[780px] text-center'
                 data-wow-delay='.2s'>
                 {/* 主标题 */}
-                <h1
-                  className='mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]'>
+                <h1 className='mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]'>
                   {siteConfig('STARTER_HERO_TITLE_1')}
                 </h1>
                 {/* 次标题 */}
@@ -66,7 +57,7 @@ export const Hero = () => {
             </div>
 
             {/* 产品预览图片 */}
-            {image && (
+            {siteConfig('STARTER_HERO_PREVIEW_IMAGE') && (
               <div className='w-full px-4'>
                 <div
                   className='wow fadeInUp relative z-10 mx-auto max-w-[845px]'
@@ -74,7 +65,7 @@ export const Hero = () => {
                   <div className='mt-16'>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={image}
+                      src={siteConfig('STARTER_HERO_PREVIEW_IMAGE')}
                       alt='hero'
                       className='mx-auto max-w-full rounded-t-xl rounded-tr-xl'
                     />
