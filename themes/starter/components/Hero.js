@@ -11,7 +11,9 @@ export const Hero = () => {
       {/* <!-- ====== Hero Section Start --> */}    
       <div
         id='home'
-        className='relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]'>
+        className={`relative overflow-hidden pt-[120px] md:pt-[130px] lg:pt-[160px] ${
+          backgroundImage ? '' : 'bg-primary'
+        }`}>
         {(backgroundImage) && (<img
           src={backgroundImage}
           alt='hero'
