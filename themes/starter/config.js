@@ -20,6 +20,7 @@ const CONFIG = {
   STARTER_HERO_BUTTON_2_URL: 'https://space.bilibili.com/22993364?spm_id_from=333.337.search-card.all.click', // 英雄区按钮
   STARTER_HERO_BUTTON_2_ICON: '/images/starter/bilibili.svg', // 英雄区按钮2的图标，不需要则留空 /images/starter/github.svg
 
+  STARTER_HERO_BACKGROUND_IMAGE: '/images/starter/hero/bg.jpg', // 英雄区背景图片
   STARTER_HERO_PREVIEW_IMAGE: '/images/starter/hero/hero-image.webp', // 产品预览图 ，默认读取public目录下图片
 
   // 顶部右侧导航暗流
